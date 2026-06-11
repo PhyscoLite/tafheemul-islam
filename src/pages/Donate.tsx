@@ -3,7 +3,7 @@ import { Heart, ShieldCheck, Users, Utensils, BookOpen, BriefcaseMedical, Mail, 
 import { Helmet } from "react-helmet-async";
 
 export function Donate() {
-  const [activeTab, setActiveTab] = useState<'bank' | 'qr'>('bank');
+  const [activeTab, setActiveTab] = useState<'bank' | 'qr'>('qr');
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleFormSubmit = (e: React.FormEvent) => {
@@ -123,16 +123,16 @@ export function Donate() {
           {/* Tabs */}
           <div className="flex bg-gray-100 p-1.5 rounded-2xl md:rounded-full w-full max-w-lg mx-auto">
             <button 
-              onClick={() => setActiveTab('bank')}
-              className={`flex-1 flex justify-center items-center gap-2 py-3 px-4 rounded-xl md:rounded-full text-sm md:text-base font-bold transition-all ${activeTab === 'bank' ? 'bg-white text-[#12372a] shadow-sm' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'}`}
-            >
-              <Building2 className="w-4 h-4 md:w-5 md:h-5" /> Bank Details
-            </button>
-            <button 
               onClick={() => setActiveTab('qr')}
               className={`flex-1 flex justify-center items-center gap-2 py-3 px-4 rounded-xl md:rounded-full text-sm md:text-base font-bold transition-all ${activeTab === 'qr' ? 'bg-white text-[#12372a] shadow-sm' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'}`}
             >
               <QrCode className="w-4 h-4 md:w-5 md:h-5" /> QR Code
+            </button>
+            <button 
+              onClick={() => setActiveTab('bank')}
+              className={`flex-1 flex justify-center items-center gap-2 py-3 px-4 rounded-xl md:rounded-full text-sm md:text-base font-bold transition-all ${activeTab === 'bank' ? 'bg-white text-[#12372a] shadow-sm' : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'}`}
+            >
+              <Building2 className="w-4 h-4 md:w-5 md:h-5" /> Bank Details
             </button>
           </div>
 

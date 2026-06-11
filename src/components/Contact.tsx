@@ -20,7 +20,7 @@ export function Contact() {
             <span className="bg-surface-container-high p-2 md:p-3 rounded-full text-secondary">
               <MapPin className="w-5 h-5 md:w-6 md:h-6" />
             </span>
-            <span className="text-sm md:text-base">Srinagar, Jammu & Kashmir, India</span>
+            <span className="text-sm md:text-base">Anantnag district, Jammu and Kashmir, India</span>
           </div>
           <div className="flex items-center gap-3 md:gap-4 text-on-surface">
             <span className="bg-surface-container-high p-2 md:p-3 rounded-full text-secondary">

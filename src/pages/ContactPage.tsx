@@ -42,7 +42,7 @@ export function ContactPage() {
               </span>
               <div className="flex flex-col gap-1 mt-1">
                  <span className="font-bold text-base md:text-lg">Our Location</span>
-                 <span className="text-sm md:text-base text-gray-600">Srinagar, Jammu & Kashmir, India</span>
+                 <span className="text-sm md:text-base text-gray-600">Anantnag district, Jammu and Kashmir, India</span>
               </div>
             </div>
             
